@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2a3d45;
+    color: white;
+}
+header img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 3em;
+}
+.hero p {
+    font-size: 1.5em;
+}
+.hero button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #ff7f50;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.services, .about, .testimonials, .contact, footer {
+    padding: 50px 20px;
+    text-align: center;
+}
+.services h2, .about h2, .testimonials h2, .contact h2 {
+    margin-bottom: 20px;
+}
+.services .service-card {
+    display: inline-block;
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+.about img, .testimonials img {
+    border-radius: 50%;
+}
+.contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.contact form button {
+    padding: 15px 30px;
+    font-size: 1em;
+    background-color: #2a3d45;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+footer {
+    background-color: #2a3d45;
+    color: white;
+}
+footer .footer-links {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+footer .footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+footer .social-icons img {
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Scroll Animations */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Carousel visibility */
+.testimonials div {
+    display: none;
+}
+.testimonials div:first-child {
+    display: block;
+}
